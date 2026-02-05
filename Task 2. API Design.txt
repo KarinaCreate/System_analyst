@@ -1,0 +1,45 @@
+REST API запрос: 
+
+GET /api/v1/delivery/stores?delivery_address_id={address_id}&delivery_date={date}[&limit={limit}] HTTP/1.1
+Host: api.petrushka-zelenaya.com
+Authorization: Bearer <user_token>
+Content-Type: application/json
+
+
+
+
+
+Пример: 
+{
+  "success": true,
+  "partners": [
+    {
+      "id": 101,
+      "name": "METRO",
+      "description": "Ближайшая доставка сегодня 21:00–23:00",
+      "logo_url": "https://cdn.petrushka.ru/logos/metro.png",
+      "external_link": "https://metro.ru/delivery?ref=petrushka"
+    },
+    {
+      "id": 102,
+      "name": "Ашан",
+      "description": "Ближайшая доставка сегодня 18:00–20:00",
+      "logo_url": "https://cdn.petrushka.ru/logos/auchan.png",
+      "external_link": "https://auchan.ru/delivery?ref=petrushka"
+    },
+    {
+      "id": 103,
+      "name": "ВкусВилл",
+      "description": "Быстрая доставка от 20 до 60 минут",
+      "logo_url": "https://cdn.petrushka.ru/logos/vkusvill.png",
+      "external_link": "https://vkusvill.ru/express?ref=petrushka"
+    },
+    {
+      "id": 104,
+      "name": "ВИКТОРИЯ",
+      "description": "Ближайшая доставка сегодня 17:00–19:00",
+      "logo_url": "https://cdn.petrushka.ru/logos/victoria.png",
+      "external_link": "https://victoria.ru/delivery?ref=petrushka"
+    }
+  ]
+}
