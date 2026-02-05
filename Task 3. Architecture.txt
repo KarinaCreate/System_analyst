@@ -17,9 +17,9 @@
                                [ Сервис PUSH-уведомлений ]
                                                    ↓
           -----------------------------------------------------------------
-              |                                                                    |
+              |                                                        |
 
      [ Firebase Cloud Messaging ]     [ Apple Push Notification Service ]
-              ↓                                                               ↓
-           Android                                                     iOS
+              ↓                                                         ↓
+           Android                                               iOS
 
